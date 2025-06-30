@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课程展示</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #e0e0eb;
+            line-height: 1.6; /* 增加行高以提高可读性 */
+        }
+        .header {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #444, #666); /* 使用渐变背景 */
+            color: #fff;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .course, .portfolio {
+            border: 1px solid #bbb;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.3s ease; /* 添加过渡效果 */
+        }
+        .course:hover, .portfolio:hover {
+            transform: translateY(-5px); /* 鼠标悬停时上移 */
+        }
+        .course-title, .portfolio-title {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #222;
+        }
+        .course-description, .portfolio-item {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .portfolio-cover {
+            margin-bottom: 20px;
+            overflow: hidden;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            background-color: #f8f8ff; /* 更改背景颜色为浅色 */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border: 5px solid #ddd; /* 更改边框颜色 */
+            background-image: linear-gradient(#f8f8ff, #f8f8ff), radial-gradient(circle at top left, #444, #666);
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+        }
+        .portfolio-cover img {
+            max-width: 100%;
+            max-height: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 15px;
+        }
+        .portfolio-cover img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        audio {
+            width: 100%;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>新闻传播学院</h1>
+        <p>欢迎来到我们的课程和作品展示页面。这里展示了我们学院的优秀课程和学生作品。</p>
+    </div>
+    <div class="course">
+        <div class="course-title">传播学课程 1</div>
+        <div class="course-description">沉默的螺旋：探讨大众传播中的意见形成过程。</div>
+    </div>
+    <div class="course">
+        <div class="course-title">传播学课程 2</div>
+        <div class="course-description">枪弹论：分析媒体对公众舆论的影响。</div>
+    </div>
+    <div class="portfolio">
+        <div class="portfolio-title">作品展示</div>
+        <div class="portfolio-cover">
+            <img src="https://th.bing.com/th/id/R.4fce77aee21ff435604c814a79bcbe42?rik=YgGn3LaZjKVC3g&riu=http%3a%2f%2fwww.tup.tsinghua.edu.cn%2fupload%2fbigbookimg%2f083588-01.jpg&ehk=Bygwqbpk4e1iatL4cf%2fzD%2fw3dXDOWvzPjJMOEnbp1L0%3d&risl=&pid=ImgRaw&r=0" alt="作品封面">
+            <!-- 新增传播学书籍照片 -->
+            <img src="https://example.com/path/to/communication-book1.jpg" alt="传播学书籍1">
+            <img src="https://example.com/path/to/communication-book2.jpg" alt="传播学书籍2">
+            <img src="https://example.com/path/to/communication-book3.jpg" alt="传播学书籍3">
+        </div>
+        <audio controls>
+            <source src="music.mp3" type="audio/mpeg">
+            您的浏览器不支持音频元素。
+        </audio>
+        <div class="portfolio-item">作品 1: 设计作品描述 - 这是一项创新设计，展示了学生的创造力和技术能力。</div>
+        <div class="portfolio-item">作品 2: 摄影作品描述 - 通过镜头捕捉生活中的美好瞬间。</div>
+    </div>
+</body>
+</html>
